@@ -69,9 +69,9 @@ document.addEventListener("keyup", function(even) {
     }
 })
 function completeToDo(element) {
-    element.classList.toogle(CHECK);
-    element.classList.toogle(UNCHECK);
-    element.parentNode.querySelector(".text").classList.toogle(LINE_THROUGH);
+    element.classList.toggle(CHECK);
+    element.classList.toggle(UNCHECK);
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
 
     LIST[element.id].done = LIST[element.id].done ? false : true;
 }
